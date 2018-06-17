@@ -10,10 +10,10 @@
 
 ##### The problem I am exploring is with three different bandits initialized with normal distributions. Later I will explore a more complicated version of the problem which uses other distributions (e.g. Exponential, Poisson etc.). Below is the order in which I will Explore this problem.
 
--[x] Introduction
--[] Explore large and small values of Epsilon
--[] Explore normal distributions with closer means
--[] Explore variance
--[] Generalize agent based on exploration
--[] Use non-parametized tests to estimated means of bandits
--[] Conclusion of my findings
+- [x] Introduction
+- [ ] Explore large and small values of Epsilon
+- [ ] Explore normal distributions with closer means
+- [ ] Explore variance
+- [ ] Generalize agent based on exploration
+- [ ] Use non-parametized tests to estimated means of bandits
+- [ ] Conclusion of my findings
