@@ -32,6 +32,6 @@ c_001 = run_experiment(1.0,2.0,3.0, 0.001, 100000)
 
 ```
 <p align="center">
-  <img src="/Users/josephseverino/Desktop/Bandit_graph_diff_epsilon.png" )
+  <img src="Bandit_graph_diff_epsilon.png" )
 
 </p>
