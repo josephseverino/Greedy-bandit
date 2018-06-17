@@ -31,3 +31,7 @@ c_01 = run_experiment(1.0,2.0,3.0, 0.01, 100000)
 c_001 = run_experiment(1.0,2.0,3.0, 0.001, 100000)
 
 ```
+<p align="center">
+  ![alt text](/Users/josephseverino/Desktop/Bandit_graph_diff_epsilon.png )
+
+</p>
