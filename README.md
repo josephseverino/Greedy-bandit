@@ -1,8 +1,8 @@
-
+<span style="font-family:Papyrus">
 # Inroduction: Multi-Armed Bandit Problem
 
-<span style="font-family:Papyrus"> The multi-armed bandit problem is a fundamental problem in reinforcement learning. The basic problem involves three (this could be generalized to N arms) different distributions (bandits) with static means and variances. The goal to this problem is finding an agent (algorythm) that can estimate the means and variances of the bandits with some degree of certainty in the most most optimal amount of time for any given bandits (distributions).
-</span>
+#### The multi-armed bandit problem is a fundamental problem in reinforcement learning. The basic problem involves three (this could be generalized to N arms) different distributions (bandits) with static means and variances. The goal to this problem is finding an agent (algorythm) that can estimate the means and variances of the bandits with some degree of certainty in the most most optimal amount of time for any given bandits (distributions).
+
 
 #### *Why "Bandits"?*
 
@@ -46,3 +46,5 @@ c_001 = run_experiment(1.0,2.0,3.0, 0.001, 100000)
 | 0.1           |   2.89199996       |                      |
 | 0.25          |   2.74934096       |   $12                |
 | 0.50          |   2.49796348       |    $1                |
+
+</span>
