@@ -34,8 +34,8 @@ c_001 = run_experiment(1.0,2.0,3.0, 0.001, 100000)
 <p align="center">
   <h2>Compare Epsilon and Convergance </>
   <img src="Bandit_graph_diff_epsilon.png" )
+<p/>
 
-</p align= "center">
 | Epsilon       | Long Term Payout   | Rate of Convergance  |
 | ------------- |:------------------:| --------------------:|
 | 0.001         |   2.98424162       |                      |
