@@ -53,8 +53,10 @@ c_001 = run_experiment(1.0,2.0,3.0, 0.001, 100000)
 
 </div>
 
-<span style="font-family:Papyrus"> We can see from the graphs above that as you decrease epsilon you increase your long term payout except once you get to eps = .001 you increase slightly and don't gain anymore significant amount. This could be due  to the psuedo-random generation of values. Either way, we can see it won't benifit that much. Additionally, we don't want to be overconfident in the case we have really close means or weird distributions with high variance, which ultumitely means closer means. Another thing to note here is that higher values of epsilon (i.e.eps = .25 and greater) don't actually converge on the correct bandit. This is due to over-exploration. When an agent indefinteley chooses the other two bandit 25 percent of the time or greater than your long term payout be attracted to a lower pyaout since it isn't always picking the higher mean payout.
-</span>
+
 
 #### Closer Means 
 - [x] Explore normal distributions with closer means
+
+<span style="font-family:Papyrus"> We can see from the graphs above that as you decrease epsilon you increase your long term payout except once you get to eps = .001 you increase slightly and don't gain anymore significant amount. This could be due  to the psuedo-random generation of values. Either way, we can see it won't benifit that much. Additionally, we don't want to be overconfident in the case we have really close means or weird distributions with high variance, which ultumitely means closer means. Another thing to note here is that higher values of epsilon (i.e.eps = .25 and greater) don't actually converge on the correct bandit. This is due to over-exploration. When an agent indefinteley chooses the other two bandit 25 percent of the time or greater than your long term payout be attracted to a lower pyaout since it isn't always picking the higher mean payout.
+</span>
