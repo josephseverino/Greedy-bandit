@@ -55,8 +55,20 @@ c_001 = run_experiment(1.0,2.0,3.0, 0.001, 100000)
 
 
 ### Small vs. Big Epsilon
-<span style="font-family:Papyrus"> We can see from the graphs above that as you decrease epsilon you increase your long term payout except once you get to eps = .001 you increase slightly and don't gain anymore significant amount. This could be due  to the psuedo-random generation of values. Either way, we can see it won't benifit that much. Additionally, we don't want to be overconfident in the case we have really close means or weird distributions with high variance, which ultumitely means closer means. Another thing to note here is that higher values of epsilon (i.e.eps = .25 and greater) don't actually converge on the correct bandit. This is due to over-exploration. When an agent indefinteley chooses the other two bandit 25 percent of the time or greater than your long term payout be attracted to a lower pyaout since it isn't always picking the higher mean payout.
+<span style="font-family:Papyrus"> We can see from the graphs above that as you decrease epsilon you increase your long term payout except once you get to eps = .001. Here, the payout decreases slightly. This could be due  to the psuedo-random generation of values. Either way, we can see it won't benifit that much. Additionally, we don't want to be overconfident in the case we have really close means or weird distributions with high variance, which ultumitely means closer means. Another thing to note here is that higher values of epsilon (i.e.eps = .25 and greater) don't actually converge on the correct bandit. This is due to over-exploration. When an agent indefinteley chooses the other two bandit 25 percent of the time or greater than your long term payout be attracted to a lower payout since it isn't always picking the higher mean payout.
 </span>
 
 #### Closer Means 
 - [x] Explore normal distributions with closer means
+<span style="font-family:Papyrus"> As we decreased the differences between the means notice that we still are able to converge on the highest bandit. This seems to be due to the fact that we are iterating 100,000 times to collect enough of a sample size for each of our epsilon values. Let's explore this further with a few calculations and estimates. See table below.
+</span>
+
+| Epsilon |   N=100000  | Estimate of Mean | N=10000 | Estimate |
+| ------- |:-----------:| ----------------:|:-------:|:--------:|
+| 0.001   | 2.98424162  |    ≈ 2000        |         |          |
+| 0.01    | 2.98545949  |    ≈ 200         |         |          |
+| 0.05    | 2.94623982  |    ≈ 30          |         |          |
+| 0.1     | 2.89199996  |    ≈ 40          |         |          |
+| 0.25    | 2.74934096  |    NA            |         |          |
+| 0.50    | 2.49796348  |    NA            |         |          |
+
