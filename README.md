@@ -69,12 +69,12 @@ c_001 = run_experiment(1.0,2.0,3.0, 0.001, 100000)
 | 0.05    |    1666.67  |    1.06     |  166.6   |   1.16      |
 | 0.1     |    3333.33  |    1.06     |  333.3   |   1.08      |
 | 0.15    |      5000   |    1.04     |  500     |   1.01      |
-### Variance
+#### Variance
 <span style="font-family:Papyrus"> From the above chart we can see larger sample sizes such as 100,000 explore more of the other bandits even with low epsilon values. Although, the optimal epsilon seemed to be around .01 to .1. These looked to be the best estimates of the normal distribution with mean 1.05. Thus, these look to have lowest variance with there estimates. Probability given N (100,000 and 10,000) iterations were calculated by taking epsilon times N divided by three, which is the probability of exploring one of other bandits given its respective epsilon. In thoery the larger the sample size the better approximation to the mean we get. However, the cost to sample larger numbers could be costly, so we must minimize that as much as possible.
 </span>
 
 
-#### Conclusion
+## Conclusion
 - [x] Conclusion: What I learned.
 
 <span style="font-family:Papyrus"> After doing many experiments I was able to learn a few things about this problem. First, epsilon in this case is the probability that were explore the bandits that look to have a smaller sample mean. Thus, we call this the epsilon-greedy problem. Alternativly, one minus epsilon equals the probability that the agent will eploit the perceived largest sample mean. Next, I noticed higher eploration of all the bandits produces lower variance of mean estimates. Consequently, there are two ways to collect larger samples of all the bandits. One is by increasing your epsilon values and two is by increasing the number of iterations you play with the bandits. The downside to increasing epsilon too much was it would never converge on the highest bandit. The downside to larger iterations of play is it may be costly in real-life practice. Thus, the optimal range for epsilon was from .01 to .1. Although, it seemed reasonable to use a psuedo-decay epsilon to maximize effectiveness of minimizing variance of sample means and maximizing the highest returns. I am still working on the last problem, but see code for more info related to this problem.  
