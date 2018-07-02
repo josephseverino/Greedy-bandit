@@ -17,9 +17,6 @@
 - [x] Introduction
 - [ ] Explore large and small values of Epsilon
 - [ ] Explore normal distributions with closer means
-- [ ] Explore variance
-- [ ] Generalize agent based on exploration
-- [ ] Use non-parametized tests to estimated means of bandits
 - [ ] Conclusion of my findings
 
 
@@ -63,12 +60,14 @@ c_001 = run_experiment(1.0,2.0,3.0, 0.001, 100000)
 <span style="font-family:Papyrus"> As we decreased the differences between the means notice that we still are able to converge on the highest bandit. This seems to be due to the fact that we are iterating 100,000 times to collect enough of a sample size for each of our epsilon values. Let's explore this further with a few calculations and estimates. See table below.
 </span>
 
-| Epsilon |   N=100000  | Estimate of Mean | N=10000 | Estimate |
-| ------- |:-----------:| ----------------:|:-------:|:--------:|
-| 0.001   | 2.98424162  |    ≈ 2000        |         |          |
-| 0.01    | 2.98545949  |    ≈ 200         |         |          |
-| 0.05    | 2.94623982  |    ≈ 30          |         |          |
-| 0.1     | 2.89199996  |    ≈ 40          |         |          |
-| 0.25    | 2.74934096  |    NA            |         |          |
-| 0.50    | 2.49796348  |    NA            |         |          |
-
+| Epsilon |   N=100000  | Est of 1.05 | N=10000 | Est of 1.05 |
+| ------- |:-----------:| -----------:|:-------:|:-----------:|
+| 0.001   |      33.33  |     .88     |   3.33  |    .27      |
+| 0.005   |      166.67 |    1.21     |  16.6   |   1.13      |
+| 0.01    |     333.33  |    1.07     |  33.3   |   .96       |
+| 0.05    |    1666.67  |    1.06     |  166.6  |   1.16      |
+| 0.1     |    3333.33  |    1.06     |  333.3  |   1.08      |
+| 0.15    |      5000   |    1.04     |  500    |   1.01      |
+### Variance
+<span style="font-family:Papyrus"> From the above chart we can see larger sample sizes such as 100,000 explore more of the other bandits even with low epsilon values. Although, the optimal epsilon seemed to be around .01 to .1. These looked to be the best estimates of the normal distribution with mean 1.05. Thus, these look to have loest variance with there estimates. In thoery the larger the sample size the better approximation to the mean we get. However, the cost to sample larger numbers could be costly, so we must minimize that as much as possible.
+</span>
